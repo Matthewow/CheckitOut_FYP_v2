@@ -35,8 +35,8 @@ public class ItemDetailActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Upload another image", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(ItemDetailActivity.this, DisplaySelection.class);
+                startActivity(intent);
             }
         });
 

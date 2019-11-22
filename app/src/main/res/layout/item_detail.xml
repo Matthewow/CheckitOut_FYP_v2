@@ -9,8 +9,8 @@
     <TextView
         android:id="@+id/item_detail"
         style="?android:attr/textAppearanceLarge"
-        android:layout_width="811dp"
-        android:layout_height="125dp"
+        android:layout_width="854dp"
+        android:layout_height="149dp"
         android:padding="16dp"
         android:textIsSelectable="true"
         tools:context=".ItemDetailFragment"
@@ -32,7 +32,7 @@
         android:contentDescription="Long Press to Download"
         android:gravity="center"
         android:orientation="vertical"
-        android:src="@drawable/bg"
+        android:src="@drawable/testimage"
         tools:ignore="HardcodedText" />
 
 

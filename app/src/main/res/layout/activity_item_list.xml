@@ -27,7 +27,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <include layout="@layout/item_list" />
     </FrameLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -37,6 +36,11 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="24dp"
         app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <include
+        layout="@layout/item_list"
+        app:layout_anchor="@+id/frameLayout"
+        app:layout_anchorGravity="center" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
