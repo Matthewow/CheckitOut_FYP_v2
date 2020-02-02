@@ -1,12 +1,13 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         btn_create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "To be finished", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, UploadPage.class);
+                startActivity(intent);
             }
         });
 
@@ -41,7 +43,14 @@ public class MainActivity extends AppCompatActivity {
         btn_guide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "developed by Matthew", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://github.com/Matthewow/CheckitOut_FYP"));
+                startActivity(intent);
+
+                //Toast.makeText(MainActivity.this, "developed by Matthew", Toast.LENGTH_SHORT).show();
             }
         });
     }

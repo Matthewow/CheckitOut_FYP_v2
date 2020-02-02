@@ -32,7 +32,7 @@
         android:contentDescription="Long Press to Download"
         android:gravity="center"
         android:orientation="vertical"
-        android:src="@drawable/testimage"
+        android:src="@drawable/result_1"
         tools:ignore="HardcodedText" />
 
 

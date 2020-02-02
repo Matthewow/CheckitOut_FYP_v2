@@ -55,7 +55,7 @@
         android:textColor="#f5f7fa"
         android:background="#4d83c9"
         android:textStyle="bold"
-        android:text="History" />
+        android:text="Result" />
 
     <Button
         android:id="@+id/m_button_3"
